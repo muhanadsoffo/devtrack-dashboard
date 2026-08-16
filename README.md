@@ -1,16 +1,106 @@
-# React + Vite
+# DevTrack — Proje Yönetim Dashboard'u
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+DevTrack, yazılım projelerini kolay bir şekilde oluşturmak, takip etmek ve yönetmek amacıyla geliştirilmiş React tabanlı bir proje yönetim uygulamasıdır.
 
-Currently, two official plugins are available:
+Proje kapsamında temel CRUD işlemleri uygulanmıştır.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Özellikler
 
-## React Compiler
+- Yeni proje ekleme
+- Projeleri listeleme
+- Mevcut projeleri güncelleme
+- Projeleri silme
+- Proje durumlarını takip etme
+- Öncelik seviyesi belirleme
+- Proje bitiş tarihi ekleme
+- Proje verilerini LocalStorage üzerinde saklama
+- Responsive kullanıcı arayüzü
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Kullanılan Teknolojiler
 
-## Expanding the Oxlint configuration
+- React.js
+- Vite
+- Tailwind CSS
+- JavaScript
+- LocalStorage
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Proje Yapısı
+
+```text
+src/
+├── components/
+│   ├── ProjectCard.jsx
+│   ├── ProjectForm.jsx
+│   └── StatsCard.jsx
+│
+├── hooks/
+│   └── useLocalStorage.js
+│
+├── pages/
+│   └── Dashboard.jsx
+│
+├── App.jsx
+├── index.css
+└── main.jsx
+```
+
+## CRUD İşlemleri
+
+Uygulamada temel CRUD işlemleri aşağıdaki şekilde uygulanmıştır:
+
+- **Create:** Yeni proje oluşturma
+- **Read:** Projeleri listeleme
+- **Update:** Mevcut proje bilgilerini düzenleme
+- **Delete:** Projeleri silme
+
+Projeler tarayıcının `LocalStorage` alanında saklandığı için sayfa yenilendiğinde veriler korunmaktadır.
+
+## Kurulum
+
+Projeyi bilgisayarınızda çalıştırmak için:
+
+```bash
+git clone <repository-url>
+```
+
+Proje klasörüne girin:
+
+```bash
+cd devtrack-project-management
+```
+
+Gerekli paketleri yükleyin:
+
+```bash
+npm install
+```
+
+Geliştirme sunucusunu başlatın:
+
+```bash
+npm run dev
+```
+
+Daha sonra terminalde gösterilen localhost adresini tarayıcıda açabilirsiniz.
+
+## Production Build
+
+Production sürümü oluşturmak için:
+
+```bash
+npm run build
+```
+
+## Proje Amacı
+
+Bu proje, Web Geliştirme ve JavaScript eğitimi kapsamında React.js kullanılarak geliştirilmiştir. Projenin amacı modern JavaScript yapısını, component tabanlı geliştirmeyi, CRUD işlemlerini ve kullanıcı arayüzü geliştirme becerilerini uygulamalı olarak göstermektir.
+
+## Canlı Demo
+
+Netlify üzerinden yayınlanan proje:
+
+https://devtrack-dashboard.netlify.app/
+
+## Geliştirici
+
+**Muhenned Sıffu**
