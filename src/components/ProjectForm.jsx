@@ -167,7 +167,7 @@ function ProjectForm({ projectToEdit, onSaveProject, onClose }) {
                             value={formData.deadline}
                             onChange={handleChange}
                             required
-                            className="w-full rounded-xl border border-slate-700 bg-slate-950 px-4 py-3 text-white outline-none"
+                            className="w-full rounded-xl border border-slate-700 bg-slate-950 px-4 py-3 text-white outline-none [color-scheme:dark]"
                         />
                     </div>
 
